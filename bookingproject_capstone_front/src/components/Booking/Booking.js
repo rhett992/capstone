@@ -1,178 +1,62 @@
-import React, { useState } from 'react';
-import '../Style/Booking.css';
-import { Form, InputGroup, Button, Card, ButtonGroup, FormControl, Row, Col } from 'react-bootstrap';
-import { Box, TextField, MenuItem, Stack } from '@mui/material';
-import { DatePicker } from '@mui/lab';
+import React from 'react'
+import Navbar from './Navbar'
+import '../Style/Booking.css'
+import Footer from './Footer'
+import { Card, Button, Col, Row, Form } from 'react-bootstrap'
 
-function Booking(props) {
-    const [activeButton, setActiveButton] = useState(null);
-
-    const handleClick = (button) => {
-        setActiveButton(button);
-    };
-
-    const originDestination = [
-        {
-            value: 'Bulacan',
-            label: 'Bulacan'
-        },
-
-        {
-            value: 'Cavite',
-            label: 'Cavite'
-        },
-
-        {
-            value: 'Legazpi',
-            label: 'Legazpi'
-        },
-
-        {
-            value: 'Naga',
-            label: 'Naga'
-        },
-
-        {
-            value: 'PITX',
-            label: 'PITX'
-        },
-
-        {
-            value: 'Tarlac',
-            label: 'Tarlac'
-        },
-    ];
-
-    const destinations = [
-
-        {
-            value: 'Baguio',
-            label: 'Baguio',
-        },
-
-        {
-            value: 'Bulacan',
-            label: 'Bulacan',
-        },
-
-        {
-            value: 'Caramoan',
-            label: 'Caramoan'
-        },
-
-        {
-            value: 'Cavite',
-            label: 'Cavite',
-        },
-
-        {
-            value: 'Legazpi',
-            label: 'Legazpi',
-        },
-
-        {
-            value: 'Naga',
-            label: 'Naga',
-        },
-
-        {
-            value: 'Sorsogon',
-            label: 'Sorsogon'
-        },
-
-        {
-            value: 'Tarlac',
-            label: 'Tarlac',
-        },
-
-    ];
+function Booking() {
 
     return (
         <div>
-            <div className="bg-pic justify-content-center align-items-center d-flex">
-                <div className="d-block div-content">
+            <Navbar />
+            <section className="booking-bg d-flex justify-content-center align-items-center">
+                <div className='bg-content container'>
+                    <h1 className='blue-col welcome-h1'>WELCOME TO PITX, FRIENDS!</h1>
+                    <h5>Experience safe, convenient, and comfortable commute here at PITX, the country’s first landport.</h5>
+                </div>
+            </section>
+            <section className="gray-bg sec-2">
+                <Row className="justify-content-center">
+                    <Col lg={8} md={9} sm={10} xs={12}>
+                        <Card className='card-booking'>
+                            <Card.Body>
+                                <Card.Title>Booking Content</Card.Title>
+                                <Card.Text>
+                                    <div className="d-flex justify-content-center">
+                                        <Form.Select aria-label="Destination" className="slct-field">
+                                            <option value="def" disabled>Please select your destination</option>
+                                            <option value="1">Batangas</option>
+                                            <option value="2">Benguet</option>
+                                            <option value="3">Bicol</option>
+                                            <option value="4">Cavite</option>
+                                        </Form.Select>
+                                    </div>
+                                </Card.Text>
+                                <Button variant="primary">Go somewhere</Button>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+                </Row>
+            </section>
+            <section className="gray-bg d-block">
+                <div className='sec-3-container container'>
                     <div>
-                        <ButtonGroup variant="light">
-                            <Button
-                                variant="light"
-                                className={`btn-type ${activeButton === 'ordinary' ? 'active' : ''}`}
-                                onClick={() => handleClick('ordinary')}
-                            >
-                                Ordinary
-                            </Button>
-                            <Button
-                                variant="light"
-                                className={`btn-type ${activeButton === 'cr' ? 'active' : ''}`}
-                                onClick={() => handleClick('cr')}
-                            >
-                                With CR
-                            </Button>
-                            <Button
-                                variant="light"
-                                className={`btn-type ${activeButton === 'sleeper' ? 'active' : ''}`}
-                                onClick={() => handleClick('sleeper')}
-                            >
-                                Sleeper
-                            </Button>
-                        </ButtonGroup>
+                        <h6>THINGS TO DO</h6>
                     </div>
-                    <br />
-
-                    <div className="d-flex">
-                        <Box>
-                            <TextField
-                                id="filled-select-currency"
-                                select
-                                label="Select"
-                                defaultValue="PITX"
-                                helperText="Please select origin"
-                                variant="filled"
-                            >
-                                {originDestination.map((option) => (
-                                    <MenuItem key={option.value} value={option.value}>
-                                        {option.label}
-                                    </MenuItem>
-                                ))}
-                            </TextField>
-                        </Box>
-                        <Box>
-                            <TextField
-                                id="filled-select-currency"
-                                select
-                                label="Select"
-                                defaultValue="Naga"
-                                helperText="Select destination"
-                                variant="filled"
-                            >
-                                {destinations.map((option) => (
-                                    <MenuItem key={option.value} value={option.value}>
-                                        {option.label}
-                                    </MenuItem>
-                                ))}
-                            </TextField>
-                        </Box>
-                        <Box>
-                            <TextField
-                                id="filled-select-currency"
-                                helperText="Select Date"
-                                variant="filled"
-                                type='date'
-                            >
-                            </TextField>
-                        </Box>
-
-                    </div>
-                    <br />
-
                     <div>
-                        <Button variant="primary" size="md">
-                            Search
-                        </Button>
+                        <h5>Shop and dine while you wait</h5>
+                    </div>
+                    <div>
+                        <p>PITX offers a wide range of dining and shopping options for a convenient commuting experience.</p>
+                    </div>
+                    <div>
+
                     </div>
                 </div>
-            </div>
+            </section>
+            <Footer />
         </div>
-    );
+    )
 }
 
-export default Booking;
+export default Booking
