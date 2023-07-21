@@ -1,1 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
+.booking-bg {
+    background-image: url("https://i0.wp.com/busterminal.ph/wp-content/uploads/2023/03/image-9.png?fit=950%2C633&ssl=1");
+    height: 75vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bg-content {
+    background-color: #e6e6e6;
+    padding: 3% 5%;
+    opacity: 0.8;
+}
+
+.blue-col {
+    color: #1d439b;
+}
+
+.welcome-h1 {
+    font-weight: 600;
+}
+
+.gray-bg {
+    background-color: #f8f8f8;
+}
+
+.sec-3-container {
+    padding: 5%;
+    padding-top: 0;
+}
+
+.card-booking {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    padding: 1.5%;
+}
+
+.slct-field {
+    width: 70%;
+}
