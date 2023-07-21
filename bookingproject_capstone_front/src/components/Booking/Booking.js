@@ -1,17 +1,17 @@
 import React from 'react'
-import Navbar from './Navbar'
 import '../Style/Booking.css'
 import Footer from './Footer'
 import { Card, Button, Col, Row, Form } from 'react-bootstrap'
+import Header from './Header'
 
 function Booking() {
 
     return (
         <div>
-            <Navbar />
+            <Header />
             <section className="booking-bg d-flex justify-content-center align-items-center">
                 <div className='bg-content container'>
-                    <h1 className='blue-col welcome-h1'>WELCOME TO PITX, FRIENDS!</h1>
+                    <h1 className="blue-col welcome-h1 ">WELCOME TO PITX, FRIENDS!</h1>
                     <h5>Experience safe, convenient, and comfortable commute here at PITX, the country’s first landport.</h5>
                 </div>
             </section>
@@ -32,7 +32,7 @@ function Booking() {
                                         </Form.Select>
                                     </div>
                                 </Card.Text>
-                                <Button variant="primary">Go somewhere</Button>
+                                <Button variant="primary">Search for Booking</Button>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -48,9 +48,6 @@ function Booking() {
                     </div>
                     <div>
                         <p>PITX offers a wide range of dining and shopping options for a convenient commuting experience.</p>
-                    </div>
-                    <div>
-
                     </div>
                 </div>
             </section>
