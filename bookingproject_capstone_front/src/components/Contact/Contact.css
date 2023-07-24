@@ -1,38 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+.contact-us-page {
+  display: flex;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+  font-family: 'Poppins', sans-serif;
+}
+
 .contact-form {
-    max-width: 400px;
-    margin: auto;
-    margin-top: 15px;
-    padding: 3px;
-    border-radius: 5px;
-  }
-  
-  .form-group {
-    margin-bottom: 20px;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  input,
-  textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  button[type='submit'] {
-    padding: 10px 20px;
-    background-color: rgb(23, 88, 111);
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  button[type='submit']:hover {
-    background-color: rgb(23, 88, 111);
-  }
-  
+  flex: 1;
+  margin-right: 150px;
+}
+
+.contact-info {
+  flex: 1;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  height: 50%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: rgb(23, 88, 111);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+}
+
+button:hover {
+  background-color: rgb(23, 88, 111);
+}
+.map-section .gmap-frame #gmap_canvas{
+  height: 65vh;
+  width: 100%;
+  border-radius: 5px;
+}
