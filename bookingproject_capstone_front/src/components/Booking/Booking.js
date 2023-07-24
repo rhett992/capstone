@@ -1,14 +1,14 @@
-import React from 'react'
-import '../Style/Booking.css'
-import Footer from './Footer'
+import React from 'react';
+import './Booking.css';
+
 import { Card, Button, Col, Row, Form } from 'react-bootstrap'
-import Header from './Header'
+
 
 function Booking() {
 
     return (
         <div>
-            <Header />
+            
             <section className="booking-bg d-flex justify-content-center align-items-center">
                 <div className='bg-content container'>
                     <h1 className="blue-col welcome-h1 ">WELCOME TO PITX, FRIENDS!</h1>
@@ -51,9 +51,9 @@ function Booking() {
                     </div>
                 </div>
             </section>
-            <Footer />
+            
         </div>
-    )
-}
+    );
+};
 
-export default Booking
+export default Booking;
