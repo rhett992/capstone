@@ -15,7 +15,7 @@
     height: 100%;
     object-fit: cover; 
     z-index: -1;
-    /* transform: scaleX(-1) */
+    transform: scaleX(-1)  /* comment this to use using bus4.avif, this is to flip the current image (^-*) */
 }
   .content-container {
     position: absolute;

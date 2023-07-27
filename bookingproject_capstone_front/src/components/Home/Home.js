@@ -25,7 +25,7 @@ function Home() {
 
   return (
     <div className='home-container'>
-        <img src='./images/bus4.avif' alt='bg'/>
+        <img src='./images/bus.avif' alt='bg'/>
       <div className='content-container'>
         <form className='form-container' onSubmit={handleSubmit}>
           <div className='form-group'>
