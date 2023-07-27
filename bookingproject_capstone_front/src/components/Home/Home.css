@@ -1,0 +1,82 @@
+.home-container {
+    position: relative;
+    height: calc(100vh - 75px); 
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .home-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    z-index: -1;
+     transform: scaleX(-1); /*uncomment the bus.avif is in use. Also, this is to flip the image "eme" */
+  }
+  
+  .content-container {
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(123, 142, 155, 0.5);    /*use this if bus.avif is in use
+    /* background-color: rgba(81, 66, 46, 0.5);   if the bus4.avif is in use */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    max-width: 400px;
+    backdrop-filter: blur(4px);
+    border-radius: 20px;
+  }
+  
+  .form-container {
+    width: 100%;
+    
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  
+  .form-group label {
+    color: #fff;
+    font-size: 18px;
+  }
+  
+  .form-group input {
+    padding: 8px;
+    font-size: 16px;
+  }
+  
+  button[type='submit'] {
+    padding: 10px;
+    font-size: 18px;
+    background-color:rgb(115, 203, 237);
+    color: #000;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease, color 0.3s ease;
+    margin-left: 35%;
+    border-radius: 40px;
+  }
+  
+  button[type='submit']:hover {
+    background-color: rgb(234, 90, 90);
+    color: #fff;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .content-container {
+      width: 80%;
+      right: 50%;
+      transform: translateX(50%);
+    }
+  }
