@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './Home.css';
 
 function Home() {
@@ -24,8 +25,7 @@ function Home() {
 
   return (
     <div className='home-container'>
-      {/* <video src='/videos/video-1.mp4' autoPlay loop muted className='video-background' /> */}
-      <img src='images/bus4.avif' alt='bg'/>
+        <img src='./images/bus4.avif' alt='bg'/>
       <div className='content-container'>
         <form className='form-container' onSubmit={handleSubmit}>
           <div className='form-group'>
@@ -67,6 +67,8 @@ function Home() {
             />
           </div>
           <button type='submit'>Book Now</button>
+          <Link to='/booking' className='booking'>
+          </Link>
         </form>
       </div>
     </div>
