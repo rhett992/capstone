@@ -10,13 +10,13 @@ import ContactUs from './components/Contact/ContactUs';
 const App = () => {
   return (
     <Router>
-    <Header />
-    <Routes>
-      <Route path='/' element={<Home />} />
-      <Route path='/about' element={<About />} />
-      <Route path='/booking' element={<Booking />} />
-      <Route path='/login' element={<Login />} />
-      <Route path='/contactus' element={<ContactUs />} />
+      <Header />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/booking' element={<Booking />} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/contactus' element={<ContactUs />} />
       </Routes>
     </Router>
   );
