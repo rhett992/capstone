@@ -48,10 +48,10 @@ function About() {
         </div>
         <div className='About-text'>
             <p className='p1' > ABOUT PITX</p>
-            <Typography fontFamily="Giga Sans" fontWeight="bold">
+            <Typography fontFamily="Poppins" fontWeight="bold">
             <p className='p2' >PITX is the first-ever landport in the country</p>
             </Typography>
-            <Typography> Parañaque Integrated Terminal Exchange (PITX) is a modern transport hub that connects commuters from the South to the different cities of Metro Manila. As the first integrated and multi-modal terminal in the country, it also provides interconnectivity between different transport modes and services to ensure efficient and seamless travel for the riding public.</Typography>
+            <Typography fontFamily="Poppins">  Parañaque Integrated Terminal Exchange (PITX) is a modern transport hub that connects commuters from the South to the different cities of Metro Manila. As the first integrated and multi-modal terminal in the country, it also provides interconnectivity between different transport modes and services to ensure efficient and seamless travel for the riding public.</Typography>
         </div> 
 
         {/* Timeline */}
@@ -77,7 +77,7 @@ function About() {
             <Typography variant="h6" component="span">
 
             </Typography>
-            <Typography className='typo'>PPP awarded Southwest Terminal of the integrated Transport System (ITS) project to MWM Terminals, Inc. with the 35-year contract of Build-Operate-Transfer (BOT)</Typography>
+            <Typography className='typo' fontFamily="Poppins">PPP awarded Southwest Terminal of the integrated Transport System (ITS) project to MWM Terminals, Inc. with the 35-year contract of Build-Operate-Transfer (BOT)</Typography>
             </TimelineContent>
         </TimelineItem>
         <TimelineItem>
@@ -96,7 +96,7 @@ function About() {
             <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent sx={{ py: '50px', px: 2 }}>
-            <Typography className='typo1'>On December 2018, PITX finally opened its terminals to the riding public, signaling the start of its operations as the country's first-ever landport</Typography>
+            <Typography className='typo1' fontFamily="Poppins">On December 2018, PITX finally opened its terminals to the riding public, signaling the start of its operations as the country's first-ever landport</Typography>
             </TimelineContent>
         </TimelineItem>
         <TimelineItem>
@@ -115,7 +115,7 @@ function About() {
             <TimelineConnector/>
             </TimelineSeparator>
             <TimelineContent sx={{ py: '50px', px: 2 }}>
-            <Typography className='typo2'>On November 2019, PITX was formally inaugurated by President Rodrigo Duterte, along with other key officials from the government and the private sector.</Typography>
+            <Typography className='typo2' fontFamily="Poppins">On November 2019, PITX was formally inaugurated by President Rodrigo Duterte, along with other key officials from the government and the private sector.</Typography>
             </TimelineContent>
         </TimelineItem>
         <TimelineItem>
@@ -134,7 +134,7 @@ function About() {
             <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent sx={{ py: '50px', px: 2 }}>
-            <Typography className='typo3'>On August 2019, PITX opened the PITX-Baguio route which led the way for the expansion of its provincial trips to more destinations in Luzon.</Typography>
+            <Typography className='typo3' fontFamily="Poppins">On August 2019, PITX opened the PITX-Baguio route which led the way for the expansion of its provincial trips to more destinations in Luzon.</Typography>
             </TimelineContent>
         </TimelineItem>
         </Timeline>
@@ -157,10 +157,11 @@ function About() {
         <TimelineContent sx={{ py: '0px', px: 2 }}>
         </TimelineContent>
         </TimelineItem>
-        <Typography variant="h6" fontFamily="Sans-serif" fontWeight="bold">
+        <Typography variant="h4" fontFamily="Poppins">
                 OUR VISION
         </Typography>
-        <Typography variant="h3" fontFamily="Giga Sans" fontWeight="bold">First-world mobility for passengers through PITX</Typography>
+        <br></br>
+        <Typography variant="h5" fontFamily="Poppins">First-world mobility for passengers through PITX</Typography>
         </Timeline>
 
         <Timeline>
@@ -179,10 +180,10 @@ function About() {
         <TimelineContent sx={{ py: '100px', px: 2 }}>
         </TimelineContent>
         </TimelineItem>
-        <Typography variant="h6" fontFamily="Sans-serif" fontWeight="bold">
+        <Typography variant="h4" fontFamily="Poppins">
                 OUR MISSION
         </Typography>
-        <Typography variant="h3" fontFamily="Giga Sans" fontWeight="bold">To improve the quality of commute by providing comfort, convenience, and reliability for passengers.</Typography>   
+        <Typography variant="h5" fontFamily="Poppins">To improve the quality of commute by providing comfort, convenience, and reliability for passengers.</Typography>   
         </Timeline>
 
         </div>
@@ -215,7 +216,7 @@ function About() {
         </TimelineOppositeContent>
         <TimelineSeparator>
         <TimelineConnector />
-        <TimelineDot color="primary">VALUE
+        <TimelineDot color="primary" fontFamily='Poppins'>VALUE
         </TimelineDot>
         </TimelineSeparator>
         <TimelineContent sx={{ py: '100px', px: 2 }}>
@@ -248,10 +249,11 @@ function About() {
         <TimelineContent sx={{ py: '100px', px: 2 }}>
         </TimelineContent>
         </TimelineItem>
-        <Typography variant="h4" fontFamily="Giga Sans" fontWeight="bold">
+        <Typography variant="h4" fontFamily="Poppins" fontWeight="bold">
         Our Recognitions
         </Typography>
-        <Typography>See the awards we received from respected organizations around the world, recognizing PITX as a landmark project and a landport like no other.</Typography>   
+        <br></br>
+        <Typography fontFamily="Poppins">See the awards we received from respected organizations around the world, recognizing PITX as a landmark project and a landport like no other.</Typography>   
         </Timeline>
 
         <div className='imgrecog'>
@@ -261,7 +263,7 @@ function About() {
             </div>
             <div>
             <img src={img2} alt='' className='image2'/>
-            <Typography>PITX was recognized by PropertyGuru at the 2019 Philippine Property Awards for its development,design, and innovation as a public facility.</Typography>
+            <p>PITX was recognized by PropertyGuru at the 2019 Philippine Property Awards for its development,design, and innovation as a public facility.</p>
             </div>
         </div>
 
