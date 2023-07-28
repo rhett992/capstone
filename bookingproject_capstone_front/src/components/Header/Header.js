@@ -81,7 +81,7 @@ function Header() {
                                         BOOKING
                                     </Link>
                                 </Nav.Link>
-                                <Nav.Link href="#action4">
+                                <Nav.Link href="///">
                                     <Link
                                         className="nav-content"
                                         as={Link}
@@ -90,7 +90,7 @@ function Header() {
                                         CONTACT US
                                     </Link>
                                 </Nav.Link>
-                                <Nav.Link href="#action5">
+                                <Nav.Link href="/login">
                                     <Link
                                         className="nav-content"
                                         as={Link}
