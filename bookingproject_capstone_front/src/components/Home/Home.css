@@ -1,34 +1,38 @@
-.img-container {
-    background-image: url("pitx-facade.png");
-    height: 80vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: rgba(155, 155, 155, 0);
+.body {
+    color: #414042;
 }
-
-.card-container {
+.first-section {
     padding: 5%;
+}
+
+.terminal-img {
+    width: 100%;
+    height: auto;
+    padding-top: 2%;
+}
+
+.vehicles {
+    width: 100%;
+    height: 150px;
+    padding: 3% 17%;
+    margin-bottom: 5%;
+    color: #414042;
+}
+
+.second-section {
+    padding: 5%;
+    background-color: #f8f5f5;
+}
+
+.txt-bolder {
+    font-weight: bold;
+}
+
+.shops-content {
+    padding: 5% 0;
+}
+
+.cards {
     border: none;
-    box-shadow: #cccccc;
-    background-color: rgba(255,255,255,0.9);
-}
-
-.text-color {
-    color: #1d439b;
-}
-
-.welcome-txt {
-    font-weight: bolder;
-}
-
-.card-ftr {
-    border: none;
-    background-color: transparent;
-}
-
-.book-now-btn {
-    background-color: #1d439b;
-    border-color: #1d439b;
-    color: #fff;
+    padding: 2%
 }
