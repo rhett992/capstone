@@ -1,39 +1,34 @@
-.image-bg-container {
-    background-image: url("https://www.pitx.ph/wp-content/uploads/pitx-facade.png");
-    height: 70vh;
-    width: 100%;
+.img-container {
+    background-image: url("pitx-facade.png");
+    height: 80vh;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-}
-
-.title-card {
-    padding: 5%;
-    padding-bottom: 2%;
-}
-
-.text-card {
-    padding: 0 5%;
-    padding-bottom: 5%;
+    background-color: rgba(155, 155, 155, 0);
 }
 
 .card-container {
-    background-color: rgba(255, 255, 255, 0.85);
+    padding: 5%;
     border: none;
-    color: #1d439b;
-    padding-bottom: 5%;
+    box-shadow: #cccccc;
+    background-color: rgba(255,255,255,0.9);
 }
 
-.font-weight-bold {
+.text-color {
+    color: #1d439b;
+}
+
+.welcome-txt {
     font-weight: bolder;
+}
+
+.card-ftr {
+    border: none;
+    background-color: transparent;
 }
 
 .book-now-btn {
     background-color: #1d439b;
-    border: #1d439b;
-}
-
-.book-now-btn:hover {
-    background-color: crimson;
-    border: crimson;
+    border-color: #1d439b;
+    color: #fff;
 }
