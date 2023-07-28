@@ -1,26 +1,44 @@
-import React from 'react';
-import './WelcomeBanner.css';
-import {Card, Button, Row, Col} from "react-bootstrap";
-import {Link} from "react-router-dom"
+import React from "react";
+import "./WelcomeBanner.css";
+import { Card, Button, Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 function WelcomeBanner(props) {
     return (
         <div>
             <div className="img-fluid img-container d-flex justify-content-center align-items-center">
                 <Row>
                     <Col sm="12">
-                        <Card className={"card-container"}>
+                        <Card
+                            className={"card-container"}
+                            style={{
+                                padding: "5%",
+                                border: "none",
+                                backgroundColor: "rgba(255, 255, 255, 0.9)",
+                            }}
+                        >
                             <Card.Body>
                                 <Card.Title>
-                                    <h1 className="text-center text-color welcome-txt">Welcome to PITX, friends!</h1>
+                                    <h1 className="text-center text-color welcome-txt">
+                                        Welcome to PITX, friends!
+                                    </h1>
                                 </Card.Title>
-                                <br/>
+                                <br />
                                 <Card.Text>
-                                    <h6 className="text-center text-color">Experience safe, convenient, and comfortable commute here at PITX, the country’s first landport.</h6>
+                                    <h6 className="text-center text-color">
+                                        Experience safe, convenient, and
+                                        comfortable commute here at PITX, the
+                                        country’s first landport.
+                                    </h6>
                                 </Card.Text>
                                 <Card.Text className="text-center card-ftr">
                                     <Link as={Link} to="/booking">
-                                        <Button className="book-now-btn fw-bold"
-                                        style={{backgroundColor: "#1d439b", borderColor: "#1d439b"}}>
+                                        <Button
+                                            className="book-now-btn fw-bold"
+                                            style={{
+                                                backgroundColor: "#1d439b",
+                                                borderColor: "#1d439b",
+                                            }}
+                                        >
                                             BOOK NOW
                                         </Button>
                                     </Link>
