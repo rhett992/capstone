@@ -8,7 +8,7 @@ function Home(props) {
     return (
         <div>
             <WelcomeBanner/>
-            <section className="first-section container">
+            <section className="first-section">
                 <div className="container d-block text-center">
                     <h1 className="txt-bolder">TRANSPORTATION</h1>
                     <h6 className="">PITX provides multimodal transport options to get you to your destination.</h6>
@@ -17,6 +17,7 @@ function Home(props) {
                 </div>
                 <div className="container vehicles">
                     <h1 className="fw-bold choose-ride text-center">CHOOSE YOUR RIDE</h1>
+                    <br/>
                     <div className="container d-flex justify-content-between vehicles">
                         <div>
                             <img src="https://www.pitx.ph/wp-content/uploads/icon-bus.svg"/>
@@ -36,9 +37,7 @@ function Home(props) {
                         <div>
                             <img src="https://www.pitx.ph/wp-content/uploads/icon-lrt.svg"/>
                             <br/> <br/>
-                            <h6 className="text-center">FUTURE</h6>
                             <h6 className="text-center">LRT</h6>
-                            <h6 className="text-center">LINK</h6>
                         </div>
                     </div>
                 </div>
@@ -49,36 +48,20 @@ function Home(props) {
                     <h6 className="text-center">PITX offers a wide range of dining and shopping options for a convenient
                         commuting experience.</h6>
                 </div>
-                <div className="shops-content">
+                <div className="shops-content container d-flex">
                     <CardGroup>
-                        <Card className={"card-1 cards"}>
-                            <Card.Img className="img-1" variant="top" src="https://scontent.fmnl8-3.fna.fbcdn.net/v/t1.6435-9/69661623_2713834685308035_1123797370027376640_n.jpg?_nc_cat=101&cb=99be929b-3346023f&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeFTOzxgAjUYRc7xFaF12fkD2osZ3sOQkvjaixnew5CS-GBuSgLmxhXp0r2vl5WS0xsdMZ26fXfzvYy80faThzZk&_nc_ohc=WtUR_1DYMGoAX8kmSj4&_nc_ht=scontent.fmnl8-3.fna&oh=00_AfBTeQXHvV3zQU1w6z6QQogqReJJLf1R4KkqlvLfZiBF-g&oe=64EB5FF2"/>
-                            <Card.Body>
-                                <Card.Title>Card title</Card.Title>
-                                <Card.Text>
-                                    This is a wider card with supporting text below as a natural lead-in
-                                    to additional content. This content is a little bit longer.
-                                </Card.Text>
+                        <Card className="cards card-1" style={{backgroundColor:"transparent", border:"none"}}>
+                            <Card.Body className="card-body">
+                                <Card.Img style={{borderRadius:"0", padding:"2%"}} src="https://www.pitx.ph/wp-content/uploads/retail-carousel-2@2x.jpg"></Card.Img>
+                                <Card.Text className="text-center"><h3 className="fw-bold">Places to Dine</h3></Card.Text>
+                                <Card.Text className="text-center" style={{padding:"0 13%"}}>Grab a quick bite or dine in at one of our restaurants so you can get your fill before commuting.</Card.Text>
                             </Card.Body>
                         </Card>
-                        <Card className={"card-2 cards"}>
-                            <Card.Img className="img-2" variant="top" src="https://www.pitx.ph/wp-content/uploads/retail-lease-image@2x.jpg"/>
-                            <Card.Body >
-                                <Card.Title>Card title</Card.Title>
-                                <Card.Text>
-                                    This card has supporting text below as a natural lead-in to
-                                    additional content.{' '}
-                                </Card.Text>
-                            </Card.Body>
-                        </Card>
-                        <Card className={"card-3 cards"}>
-                            <Card.Img className="img-3" variant="top" src="https://img.philkotse.com/2022/02/24/WFFKkBCT/pitx-lto-center-opening-d7db_wm.jpg"/>
-                            <Card.Body>
-                                <Card.Title>Card title</Card.Title>
-                                <Card.Text>
-                                    This is a wider card with supporting text below as a natural lead-in
-                                    to additional content. This card has even longer content than the
-                                    first to show that equal height action.
+                        <Card className="cards card-2" style={{backgroundColor:"transparent", border:"none"}}>
+                            <Card.Body className="card-body">
+                                <Card.Img style={{borderRadius:"0", padding:"2%"}} src="https://www.pitx.ph/wp-content/uploads/retail-lease-image@2x.jpg"></Card.Img>
+                                <Card.Text className="text-center"><h3 className="fw-bold">Places to Shop</h3></Card.Text>
+                                <Card.Text className="text-center" style={{padding:"0 13%"}}>Shop from your favorite brands while stocking up on those last-minute travel essentials.
                                 </Card.Text>
                             </Card.Body>
                         </Card>
