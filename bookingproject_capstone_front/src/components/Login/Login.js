@@ -6,6 +6,9 @@ import axios from "axios";
 import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
+
+  const navigate = useNavigate();
+
   const [isSignup, setisSignup] = useState(false);
   const [inputs, setInputs] = useState({
     name: "",
@@ -34,6 +37,7 @@ const Login = () => {
           console.log(response);
         });
     }
+    navigate({ pathname: '/', state: { message: 'Login successful' } });
     
   };
   const resetState = (e) => {

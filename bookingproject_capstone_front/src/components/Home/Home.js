@@ -4,8 +4,11 @@ import WelcomeBanner from "../Welcome Banner/WelcomeBanner";
 import './Home.css'
 import {CardGroup, Card} from 'react-bootstrap'
 
+
 function Home(props) {
+
     return (
+        
         <div>
             <WelcomeBanner/>
             <section className="first-section">
@@ -68,6 +71,7 @@ function Home(props) {
                     </CardGroup>
                 </div>
             </section>
+
         </div>
     );
 }
