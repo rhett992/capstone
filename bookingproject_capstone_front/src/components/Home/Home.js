@@ -13,29 +13,29 @@ function Home(props) {
                     <h1 className="txt-bolder">TRANSPORTATION</h1>
                     <h6 className="">PITX provides multimodal transport options to get you to your destination.</h6>
                     <img className="img-fluid terminal-img"
-                         src="https://www.pitx.ph/wp-content/uploads/image-choose-ride@2x.jpg" alt="bus terminal"/>
+                        src="https://www.pitx.ph/wp-content/uploads/image-choose-ride@2x.jpg" alt="bus terminal"/>
                 </div>
                 <div className="container vehicles">
                     <h1 className="fw-bold choose-ride text-center">CHOOSE YOUR RIDE</h1>
                     <br/>
                     <div className="container d-flex justify-content-between vehicles">
                         <div>
-                            <img src="https://www.pitx.ph/wp-content/uploads/icon-bus.svg"/>
+                            <img src="https://www.pitx.ph/wp-content/uploads/icon-bus.svg"alt=""/>
                             <br/> <br/>
                             <h6 className="text-center">BUS</h6>
                         </div>
                         <div>
-                            <img src="https://www.pitx.ph/wp-content/uploads/icon-puj.svg"/>
+                            <img src="https://www.pitx.ph/wp-content/uploads/icon-puj.svg"alt=""/>
                             <br/> <br/>
                             <h6 className="text-center">PUJ</h6>
                         </div>
                         <div>
-                            <img src="https://www.pitx.ph/wp-content/uploads/icon-taxi.svg"/>
+                            <img src="https://www.pitx.ph/wp-content/uploads/icon-taxi.svg"alt=""/>
                             <br/> <br/>
                             <h6 className="text-center">TAXI</h6>
                         </div>
                         <div>
-                            <img src="https://www.pitx.ph/wp-content/uploads/icon-lrt.svg"/>
+                            <img src="https://www.pitx.ph/wp-content/uploads/icon-lrt.svg"alt=""/>
                             <br/> <br/>
                             <h6 className="text-center">LRT</h6>
                         </div>
