@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
+import {Navigate, BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import Header from './components/Header/Header';
 import Login from './components/Login/Login';
 import ContactUs from './components/Contact/ContactUs';
@@ -7,17 +7,25 @@ import Home from './components/Home/Home';
 import About from './components/About/About';
 import Booking from './components/Booking/Booking';
 
-const App = () => {
+
+  const App = () => {
+    const isAuthenticated = localStorage.getItem('login_token');
   return (
     <Router>
       <Header />
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/booking' element={<Booking />} />
-        <Route path='/login' element={<Login />} />
-        <Route path='/contactus' element={<ContactUs />} />
-      </Routes>
+          <Route path="/login" element={<Login />} />
+
+            {/* User Routes */}
+            <Route
+              path="/"
+              element={isAuthenticated ? <Navigate to="/home" /> : <Navigate to="/login" />}
+            />
+            {/* <Route path="/home/*" element={isAuthenticated ? <Home /> : <Navigate to="/login" />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contactus" element={<ContactUs />} />
+            <Route path="/booking" element={<Booking />} /> */}
+        </Routes>
     </Router>
   );
 };
