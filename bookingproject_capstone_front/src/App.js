@@ -14,12 +14,12 @@ import Booking from './components/Booking/Booking';
     <Router>
       <Header />
       <Routes>
-          <Route path="/auth/login" element={<Login />} />
+          <Route path="/login" element={<Login />} />
 
             {/* User Routes */}
             <Route
               path="/"
-              element={isAuthenticated ? <Navigate to="/home" /> : <Navigate to="/auth/login" />}
+              element={isAuthenticated ? <Navigate to="/home" /> : <Navigate to="/login" />}
             />
             {/* <Route path="/home/*" element={isAuthenticated ? <Home /> : <Navigate to="/login" />} />
             <Route path="/about" element={<About />} />
