@@ -11,11 +11,7 @@ use Illuminate\Support\Facades\Validator;
 
 class UserController extends Controller
 {
-    /**
-     * Create User
-     * @param Request 
-     * @return User 
-     */
+   
     public function createUser(Request $request)
     {
         try {
