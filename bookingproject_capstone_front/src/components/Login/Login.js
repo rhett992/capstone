@@ -21,18 +21,19 @@ const Login = () => {
       [e.target.name]: e.target.value,
     }));
   };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(inputs);
     if (isSignup) {
       axios
-        .post("http://localhost:8000/api/auth/register", inputs)
+        .post("https://pitx-capstone.000webhostapp.com/api/auth/register", inputs)
         .then(function (response) {
           console.log(response);
         });
     } else {
       axios
-        .post("http://localhost:8000/api/auth/login", inputs)
+        .post("https://pitx-capstone.000webhostapp.com/api/auth/login", inputs)
         .then(function (response) {
           console.log(response);
         });
